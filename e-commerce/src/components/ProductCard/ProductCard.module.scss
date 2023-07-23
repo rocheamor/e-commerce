@@ -1,0 +1,55 @@
+@import '../../themes/themes.scss';
+
+.container {
+    width: 200px;
+    height: 300px;
+    border: 2px solid $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // &:hover {
+    //     width: 220px;
+    //     height: 300px;
+    // }
+}
+
+.name {
+    height: 60px;
+    color: $primary;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0px 5px;
+}
+
+.price {
+    color: black;
+    height: 30px;
+    margin-block-end: 0;
+    font-size: 13px;
+}
+
+.image {
+    height: 150px;
+}
+
+.heart {
+    background-color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    color: $primary;
+}

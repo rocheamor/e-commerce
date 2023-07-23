@@ -1,0 +1,71 @@
+@import '../../themes/themes.scss';
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border:1px solid $primary;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0px 8px;
+    @media (max-width: 913px) {
+      width: 400px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 415px) {
+        width: 225px;
+        margin-bottom: 5px;
+      }
+}
+
+.form {
+    display: flex;
+    height: 40px;
+    @media (max-width: 913px) {
+      height: 50px;
+    }
+    @media (max-width: 415px) {
+        height: 28px;
+      }
+}
+
+.button {
+    color: $background;
+    background-color: $primary;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 4px;
+    @media (max-width: 913px) {
+      width: 35px;
+      height: 35px;
+      border-radius: 17.5px;
+      margin-top: 5px;
+    }
+    @media (max-width: 415px) {
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        margin-top: 2px;
+      }
+}
+
+.input {
+    border: none;
+    outline:none;
+    width: 270px;
+    @media (max-width: 913px) {
+      font-size: 20px;
+      width: 360px;
+    }
+    @media (max-width: 769px) {
+      font-size: 18px;
+    }
+    @media (max-width: 415px) {
+        width: 200px;
+        font-size: 12px;
+      }
+}
