@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
 
-  const [isFavourite, setIsFavourite] = useState (false);
+  const [isFavourite, setIsFavourite] = useState (product.isFavourite);
 
   const handleFavouriteToggle = async () => {
     setIsFavourite(!isFavourite);

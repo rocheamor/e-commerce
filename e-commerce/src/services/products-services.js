@@ -37,7 +37,7 @@ export const handleAddToCart = async (item, variant) => {
 export const updateFavouriteStatus = async (productId, isFavourite) => {
     const firestore = getFirestore();
     const productRef = doc(firestore, 'product', productId); 
-    await updateDoc(productRef, { isFavourite });
+    await updateDoc(productRef, { isFavourite: isFavourite });
 };
 
 const deleteCollection = async (collectionPath) => {
