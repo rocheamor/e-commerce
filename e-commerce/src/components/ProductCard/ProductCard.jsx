@@ -5,7 +5,6 @@ import { faHeart as faHeartOutline} from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom';
 import { updateFavouriteStatus } from '../../services/products-services';
 import { useState } from 'react';
-//import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
   const { name, imageUrl} = product;
@@ -17,17 +16,16 @@ const ProductCard = ({ product }) => {
   const [isFavourite, setIsFavourite] = useState (false);
 
   const handleFavouriteToggle = async () => {
-    setIsFavourite((prevIsFavourite) => !prevIsFavourite);
+    setIsFavourite(!isFavourite);
     await updateFavouriteStatus(product.id, !isFavourite);
   };
-
 
   return (
     <div className={styles.container}>
       <Link to={`/products/${product.id}`} className={styles.link}>
         <div className={styles.card}>
           <h5 className={styles.name}>{name}</h5>
-          <img className={styles.image} src={imageUrl} alt={name + ' poster'} />
+          <img className={styles.image} src={imageUrl} alt={name} />
           <p className={styles.price}>From ${minPrice.toFixed(2)} to ${maxPrice.toFixed(2)}</p>
         </div>
       </Link>
@@ -39,18 +37,3 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
-
-//   const onDeleteClick = (e) => {
-//     const confirmed = confirm('You want to delete movie with id: ' + id);
-//     if (confirmed) {
-//       deleteMovieById(id);
-//     }
-//   };
-
-      {/* <p>{price}</p> */}
-      {/* <Link className={style.card_link} to={id}>
-        See More
-      </Link>
-      <button onClick={onDeleteClick} className={style.delete_button}>
-        Delete Movie
-      </button> */}

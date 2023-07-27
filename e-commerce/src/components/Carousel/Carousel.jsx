@@ -5,7 +5,6 @@ import styles from "./Carousel.module.scss";
 import { Link } from 'react-router-dom';
 
 const Carousel = ({products}) => {
-
     const settings = {
       dots: true,
       infinite: true,
@@ -20,7 +19,7 @@ const Carousel = ({products}) => {
       <h3 className={styles.heading}>Bestseller Products</h3>
       <div className={styles.wrapper}>
         <Slider className={styles.container} {...settings}>
-      {products.map((product, id) => (
+          {products.map((product, id) => (
         <Link to={`/products/${product.id}`} key={id}>
           <img className={styles.image} src={product.imageUrl} alt={product.name} />
         </Link>

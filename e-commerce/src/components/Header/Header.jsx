@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
         <NavLink to ="/" className={styles.link}>
-        <StyledComponent>Bella's Best</StyledComponent>
+          <StyledComponent>Bella's Best</StyledComponent>
         </NavLink>
     </div>
   )

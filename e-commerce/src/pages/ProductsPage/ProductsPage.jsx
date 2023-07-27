@@ -7,7 +7,6 @@ const ProductsPage = ({ products }) => {
   const searchParams = new URLSearchParams(location.search);
   const category = searchParams.get('category');
 
-  // Filter the products based on the selected category
   const filteredProducts = products.filter((product) => product.category === category);
 
   return (
