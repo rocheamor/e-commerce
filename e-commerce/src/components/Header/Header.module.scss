@@ -1,0 +1,20 @@
+@import '../../themes/themes.scss';
+
+.link {
+    text-decoration: none;
+    color: $primary;
+    font-size: 25px;
+    font-family: $font;
+    
+    @media (max-width: 913px) {
+      font-size: 25px;
+      margin-block-start: 0;
+      padding: 0;
+    }
+    @media (max-width: 769px) {
+      font-size: 20px;
+    }
+    @media (max-width: 415px) {
+        font-size: 15px;
+      }
+}

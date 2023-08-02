@@ -1,0 +1,33 @@
+@import '../../themes/themes.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    text-align: center;
+    font-family: $font;
+    color: $primary;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    font-family: $font;
+    color: $primary;
+    width: 500px;
+    border-bottom: 1px solid $primary;
+    @media (max-width: 415px) {
+        width: 380px;
+      }
+    @media (max-width: 395px) {
+    width: 350px;
+    }
+}
+
+.image {
+    height: 120px;
+    padding-right: 30px;
+}

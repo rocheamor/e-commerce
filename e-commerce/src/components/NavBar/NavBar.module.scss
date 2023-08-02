@@ -1,0 +1,48 @@
+@import '../../themes/themes.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background;
+    padding: 0px 20px;
+    @media (max-width: 913px) {
+      flex-direction: column;
+      padding: 10px 0;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 769px) {
+      margin-bottom: 20px;
+    }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 1024px) {
+    width: 350px;
+  }
+  @media (max-width: 913px) {
+    width: 500px;
+  }
+  @media (max-width: 415px) {
+    width: 280px;
+  }
+}
+
+.icon {
+  font-size: 22px;
+  color: $primary;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media (max-width: 913px) {
+    font-size: 25px;
+  }
+  @media (max-width: 415px) {
+    font-size: 18px;
+  }
+}
